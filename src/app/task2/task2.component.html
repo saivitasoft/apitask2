@@ -1,15 +1,20 @@
 <div>
     <table class="table">
+    
+        
 
         <tr>
             <td>id</td>
             <td>name</td>
             <td>year</td>
+            <td>color</td>
         </tr>
         <tr *ngFor="let s of apiData">
             <td>{{s.id}}</td>
             <td>{{s.name}}</td>
             <td>{{s.year}}</td>
+            <td>{{s.color}}</td>
+
         </tr>
     </table>
 </div>
