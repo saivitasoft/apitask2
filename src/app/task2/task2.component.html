@@ -1,1 +1,15 @@
-<p>task2 works!</p>
+<div>
+    <table class="table">
+
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>year</td>
+        </tr>
+        <tr *ngFor="let s of apiData">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.year}}</td>
+        </tr>
+    </table>
+</div>
