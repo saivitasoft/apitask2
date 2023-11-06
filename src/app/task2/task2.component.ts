@@ -11,8 +11,12 @@ export class Task2Component implements OnInit {
 
   constructor(private apiService: ApiService){}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.apiService.getData().subscribe((res: any) => {
+      console.log(res);
+    });
   }
+
 
 }
 
